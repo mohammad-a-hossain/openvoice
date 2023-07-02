@@ -2,6 +2,12 @@
 import Image from "next/image";
 import Slider from "react-slick";
 
+//import 'react-slick/dist/react-slick.css';
+
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import bannerImgOne  from "/public/images/bannerimgOne.jpg";
@@ -63,26 +69,28 @@ const Banner = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+  
   return (
     <div className="w-full h-auto md:h-[650px] relative">
       <Slider {...settings}>
-        <div>
-          <Image
-            className="w-full h-auto md:h-[650px] object-cover"
-            src={bannerImgOne}
-            loading={"eager"}
-            alt="bannerImgOne"
-          />
-        </div>
-        <div>
+      <div>
           <Image
             className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgTwo}
             loading={"lazy"}
             alt="bannerImgTwo"
           />
-        </div>
-        <div>
+        </div> 
+         <div>
+          <Image
+            className="w-full h-auto md:h-[650px] object-cover"
+            src={bannerImgOne}
+            loading={"eager"}
+            alt="bannerImgOne"
+          />
+        </div> 
+      
+       <div>
           <Image
             className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgThree}

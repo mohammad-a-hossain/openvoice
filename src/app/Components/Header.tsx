@@ -9,7 +9,8 @@ const Header = () => {
       <div className="flex items-center justify-between h-full mx-auto max-w-7xl">
         <Link href="/">
           <div>
-            <Image width={80} height={80} src={logoDark} alt="logoDark" />
+           {/*  <Image width={80} height={80} src={logoDark} alt="logoDark" /> */}
+           Open-Voice
           </div>
         </Link>
         <div>

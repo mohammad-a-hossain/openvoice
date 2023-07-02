@@ -5,12 +5,12 @@ import Footer from './Components/footer';
 
 export default function Home() {
   return (
-   <main className="font-bodyFont">
+   <main>
    
     <Header />
     <Banner />
   
-    <div className="relative mx-auto max-w-7xl h-60">
+    <div className="relative mx-auto max-w-7xl h-60 bg-slate-500">
       <BannerBottom />
     </div>
  
