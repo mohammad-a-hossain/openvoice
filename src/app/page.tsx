@@ -1,7 +1,7 @@
-import Header from './Components/Header'
-import Banner from './Components/Bannar'
-import BannerBottom from './Components/BannerBottom'
-import Footer from './Components/footer';
+import Header from '../Components/Header'
+import Banner from '../Components/Bannar'
+import BannerBottom from '../Components/BannerBottom'
+import Footer from '../Components/footer';
 
 export default function Home() {
   return (
