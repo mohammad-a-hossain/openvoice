@@ -16,6 +16,7 @@ import schemas from './sanity/schemas'
   apiVersion:'2023-07-04',
   basePath:"/admin",
 
+
   plugins: [deskTool(), visionTool()],
   schema:{types:schemas}
 
