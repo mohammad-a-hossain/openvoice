@@ -3,9 +3,15 @@ import Banner from '../Components/Bannar'
 import BannerBottom from '../Components/BannerBottom'
 import Footer from '../Components/footer';
 
-export default function Home() {
+import { getPosts } from '../../sanity/schemas/sanity.utils';
+
+
+
+export default async function Home() {
+  const posts = await getPosts()
   return (
    <main>
+    
    
     <Header />
     <Banner />
@@ -14,11 +20,30 @@ export default function Home() {
       <BannerBottom />
     </div>
  
-    <div className="px-4 py-20 mx-auto max-w-7xl">Posts will go here</div>
+    <div className="px-4 py-20 mx-auto max-w-7xl">
+      
+    {posts.length}
+    </div>
+
     <Footer />
   
   </main>
   )
 }
+
+
+
+// export function getStaticPatchs(){
+
+// }
+
+// export function getStaticProps(){
+//   return {
+//     props:{
+//       posts:[]
+//     }
+//   }
+
+// }
 
 

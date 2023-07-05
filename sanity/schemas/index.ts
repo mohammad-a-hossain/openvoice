@@ -5,6 +5,6 @@ import author from './author'
 
 //export default schemaTypes = [post, author, category, blockContent]
 
-const schemas= [author]
+const schemas= [author,category,post,blockContent]
 
 export default schemas
