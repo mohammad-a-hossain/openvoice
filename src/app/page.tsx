@@ -1,26 +1,26 @@
-import Header from '../Components/Header'
+import Headers from '../Components/Headers'
 import Banner from '../Components/Bannar'
 import BannerBottom from '../Components/BannerBottom'
-import Footer from '../Components/footer';
+import Footers from '../Components/footers';
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { getPosts } from '../../sanity/schemas/sanity.utils';
+import { getPosts } from '../../sanity/sanity.utils';
 
-import { Post } from './../type.d';
+//import { Post } from './../type.d';
 
 
 
 
 
 export default async function Home() {
-  const posts:Post[] = await getPosts()
+  const posts = await getPosts()
  // console.log(posts)
   return (
-   <main>
+   <div>
     
    
-    <Header />
+    <Headers />
     <Banner />
     <div className="relative mx-auto max-w-7xl h-60 bg-slate-500">
       <BannerBottom />
@@ -50,9 +50,9 @@ export default async function Home() {
     }
     </div>
 
-    <Footer />
+    <Footers />
   
-  </main>
+  </div>
   )
 }
 

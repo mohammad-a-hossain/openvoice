@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.1.7",
     "@sanity/image-url": "^1.0.2",
+    "@sanity/portable-text-editor": "^3.14.1",
     "@sanity/vision": "^3.14.1",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
@@ -21,11 +23,14 @@
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.1",
     "react-icons": "^4.10.1",
+    "react-portable-text": "^0.6.0",
     "react-slick": "^0.29.0",
     "sanity": "^3.14.1",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.2",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "yarn": "^1.22.19"
   }
 }

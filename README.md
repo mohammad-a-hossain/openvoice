@@ -36,3 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 // sanity istallation commnad
 npm i sanity next-sanity 
+
+
+
+"https://cdn.sanity.io"
