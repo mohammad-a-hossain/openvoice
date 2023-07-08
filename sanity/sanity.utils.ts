@@ -39,7 +39,7 @@ export async function getPost(slug:string):Promise<Posts>{
       name,
        "image":image.asset->url,
      },
-     "comment":*[_type == "comment" && post._ref == ^._id && approved ==true ],
+    
     description, 
     "mainImage":mainImage.asset ->url,
     body,
@@ -48,3 +48,6 @@ export async function getPost(slug:string):Promise<Posts>{
   )
 }
 
+/* 
+//  "comment":*[_type == "comment" && post._ref == ^._id && approved ==true ],
+*/

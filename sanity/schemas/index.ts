@@ -4,8 +4,8 @@ import post from './post'
 import author from './author'
 import comment from './comment'
 
-//export default schemaTypes = [post, author, category, blockContent]
 
-const schemas= [author,category,post,comment,blockContent]
+
+const schemas= [author,category,post,blockContent]
 
 export default schemas
